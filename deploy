@@ -1,0 +1,1 @@
+rsync -r --progress . --exclude=".git/" trevorwi@192.185.68.17:public_html/.website_77573de4/

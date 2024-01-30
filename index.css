@@ -1,5 +1,6 @@
 :root {
     --green: #009725;
+    --green_hover: #00731c;
     --yellow: #dd9800; 
     --text: #3c3744;
     --background: #e3e4db;
@@ -27,6 +28,9 @@ p{
 .topnav {
     background-color: var(--background);
     overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 55px;
+    float: right;
 }
 
 /* Style the links inside the navigation bar */
@@ -49,6 +53,17 @@ p{
 .topnav a.active {
     background-color: var(--green);
     color: white;
+}
+
+.topnav a.active:hover{
+    background-color: var(--green_hover);
+}
+
+#logo{
+    width: 300px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .side{

@@ -2,6 +2,7 @@
     --green: #009725;
     --green_hover: #00731c;
     --yellow: #dd9800; 
+    --yellow_hover: #c28500;
     --text: #3c3744;
     --background: #e3e4db;
     --background_accent: #dce0b8;
@@ -37,16 +38,20 @@ body {
 .topnav a:hover {
     background-color: var(--background_accent);
     color: black;
+    text-decoration: underline;
+    transition: 0.2s;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: var(--green);
+    background-color: var(--yellow);
     color: white;
 }
 
 .topnav a.active:hover{
-    background-color: var(--green_hover);
+    background-color: var(--yellow_hover);
+    text-decoration: underline;
+    transition: 0.2s;
 }
 
 .side{

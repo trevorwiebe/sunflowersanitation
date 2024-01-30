@@ -14,16 +14,6 @@ body {
     color: var(--text);
 }
 
-h1 {
-    letter-spacing: 1px;
-}
-
-p{
-    letter-spacing: 1px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: var(--background);

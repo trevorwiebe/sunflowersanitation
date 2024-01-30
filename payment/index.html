@@ -26,12 +26,42 @@
 
                 </div>
 
-                <div id="under_construction_div">
-                    
+                <div id="payment_div_container">
+                    <div class="payment_box">
+                        <img class="payment_icon" src="/res/bank.svg">
+                        <p class="payment_block_title">Pay Online</p>
+                        <p class="payment_block_text">Quickly pay your bill directly from your phone or computer.</p>
+                        <button class="payment_call_now_btn" onclick="openPaymentPortal()">Pay Bill Now</button>    
+                    </div>
+                    <div class="payment_box">
+                        <img class="payment_icon" src="/res/phone.svg">
+                        <p class="payment_block_title">Pay Over the Phone</p>
+                        <p class="payment_block_text">You can give us a call and we will process the payment over the phone.  This is your best option for setting up automatic payments.</p>
+                        <button class="payment_call_now_btn" onclick="openPhoneApp()">Call Now</button>
+                    </div>
+                    <div class="payment_box">
+                        <img class="payment_icon" src="/res/mail.svg">
+                        <p class="payment_block_title">Mail Payment</p>
+                        <p class="payment_block_text">Please sent payment to:</p>
+                        <p class="payment_block_text">Sunflower Sanitation, Inc<br>3171 Alamo Rd<br>Durham, KS 67438</p>
+                    </div>
                 </div>
             </div>
             <div class="side"></div>
         </div>
+
+        <script>
+
+            function openPhoneApp() {
+              // You can replace 'tel:1234567890' with the phone number you want to call
+              window.location.href = 'tel:1234567890';
+            }
+
+            function openPaymentPortal(){
+                window.location.href = 'https://www.google.com/'
+            }
+        
+        </script>
 
     </body>
 </html>

@@ -1,6 +1,16 @@
+:root {
+    --green: #009725;
+    --yellow: #dd9800; 
+    --text: #3c3744;
+    --background: #e3e4db;
+    --background_accent: #dce0b8;
+}
+
 body {
     padding: 0;
     font-family: 'Libre Baskerville', serif;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 h1 {
@@ -13,18 +23,45 @@ p{
     padding-right: 16px;
 }
 
-#under_construction_div{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--background);
+    overflow: hidden;
 }
 
-#container_div{
-    width: 400px;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: var(--text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--background_accent);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--green);
+    color: white;
+}
+
+.side{
+    width: 25%;
+}
+
+.container_div{
+    width: 50%;
+}
+
+.main_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

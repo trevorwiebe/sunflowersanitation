@@ -74,6 +74,20 @@ body {
     text-align: center;
 }
 
+#route_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.route_block{
+    width: 50%;
+}
+
+.route_block_title{
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
     .container_div{
         width: 96%;

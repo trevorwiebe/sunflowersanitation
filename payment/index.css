@@ -79,6 +79,7 @@ body {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .payment_box{
@@ -121,6 +122,23 @@ body {
 
 #payment_call_now_btn:hover{
     background-color: var(--yellow_hover);
+}
+
+#payment_overview_block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#payment_overview_text{
+    width: 50%;
+    text-align: justify;
+}
+
+#payment_image{
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {

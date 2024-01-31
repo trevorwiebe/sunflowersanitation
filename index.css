@@ -153,6 +153,67 @@ body {
     margin-bottom: 100px;
 }
 
+#truck_1{
+    width: 35%;
+    margin-top: 20px;
+}
+
+#about_us_div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about_p{
+    text-align: justify;
+    width: 100%;
+}
+
+.about_p_small{
+    text-align: justify;
+    margin-left: 5%;
+    width: 60%;
+}
+
+#contact_us_div{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text_input{
+    width: 600px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.text_input_body{
+    height: 300px;
+}
+
+.contact_us_title{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#send_email_btn{
+    border: none;
+    background-color: var(--green);
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: white;
+}
+
 @media only screen and (max-width: 1400px) {
     .container_div{
         width: 74%;
@@ -197,5 +258,13 @@ body {
     }
     .dropdown{
         display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .text_input{
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }

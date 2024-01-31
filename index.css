@@ -259,11 +259,18 @@ body {
     .dropdown{
         display: inline-block;
     }
+    .about_p_small{
+        margin-left: 0%;
+        width: 100%;
+    }
+    #truck_1{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px){
     .text_input{
-        width: 100%;
+        width: 95%;
         margin-right: 0px;
         margin-left: 0px;
     }

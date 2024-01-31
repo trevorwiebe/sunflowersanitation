@@ -10,39 +10,52 @@
     </head>
     <body>
 
-        <div class="main_container">
-            <div class="side"></div>
-            <div class="container_div">
+        <div id="main_screen">
 
-                <div id="nav_div">
-
-                    <img id="logo" src="res/logo.png">
-
-                    <div class="topnav">
-                        <a class="active" href="/">Home</a>
-                        <a href="/schedule/">Route Schedules</a>
-                        <a href="/payment/">Payment</a>
+            <div class="main_container">
+                <div class="side"></div>
+                <div class="container_div">
+    
+                    <div id="nav_div">
+    
+                        <img id="logo" src="res/logo.png">
+    
+                        <div class="topnav">
+                            <a class="active" href="/">Home</a>
+                            <a href="/schedule/">Route Schedules</a>
+                            <a href="/payment/">Payment</a>
+                        </div>
+    
                     </div>
-
-                </div>
-
-                <!-- Top Navigation Menu -->
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
-                    <div id="dropdownContent" class="dropdown-content">
-                        <a href="/">Home</a>
-                        <a href="/schedule/">Route Schedules</a>
-                        <a href="/payment/">Payment</a>
+    
+                    <!-- Top Navigation Menu -->
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+                        <div id="dropdownContent" class="dropdown-content">
+                            <a href="/">Home</a>
+                            <a href="/schedule/">Route Schedules</a>
+                            <a href="/payment/">Payment</a>
+                        </div>
                     </div>
+    
+                    <div id="under_construction_div">
+                        <h1>Sunflower Sanitation</h1>
+                        <p>This website is under development.  Please check back later.</p>
+                        <p>If you have a question, you can reach us at <a href="tel:">(620) 453-6654</a></p>
+                    </div>
+    
                 </div>
-
-                <div id="under_construction_div">
-                    <h1>Sunflower Sanitation</h1>
-                    <p>This website is under development.  Please check back later.</p>
-                    <p>If you have a question, you can reach us at <a href="tel:">(620) 453-6654</a></p>
-                </div>
+                <div class="side"></div>
             </div>
-            <div class="side"></div>
+    
+    
+            <div id="footer">
+                <img id="footer_logo" src="/res/logo.png">
+                <a id="footer_call" href="tel:6205049510">(620) 504-9510</a>
+                <a id="footer_call" href="mailto:support@sunflowersanitation.com">support@sunflowersanitation.com</a>
+                <p id="copy_write">&copy; 2024</p>
+            </div>
+            
         </div>
 
         <script src="/scripts/mobile_nav_script.js"></script>

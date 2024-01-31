@@ -120,6 +120,10 @@ body {
     margin-top: 50px;
 }
 
+#route_schedule_title{
+    margin-top: 50px;
+}
+
 #route_schedule_overview_block{
     width: 100%;
     display: flex;
@@ -143,6 +147,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .route_block{

@@ -114,6 +114,10 @@ body {
     padding-bottom: 250px;
 }
 
+#payment_options_title{
+    margin-top: 50px;
+}
+
 #logo{
     width: 300px;
     margin-bottom: 25px;
@@ -126,6 +130,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .payment_box{

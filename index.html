@@ -47,17 +47,15 @@
                     </div>
 
                     <div id="contact_us_div">
-                        <h2>Contact Us</h2>
-                        <p class="contact_us_title">Name</p>
-                        <input class="text_input" type="text">
-                        <p class="contact_us_title">Phone Number</p>
-                        <input class="text_input" type="text">
-                        <p class="contact_us_title">Email Address</p>
-                        <input class="text_input" type="email">
-                        <p class="contact_us_title">Body</p>
-                        <textarea class="text_input text_input_body" type="text"></textarea>
-                        <br>
-                        <button id="send_email_btn">Send</button>
+                        <form action="scripts/sendmail.php" method="post">
+                            <label class="contact_us_title" for="name">Name:</label><br><br>
+                            <input class="text_input" type="text" id="name" name="name" required><br><br>
+                            <label class="contact_us_title" for="email">Email:</label><br><br>
+                            <input class="text_input" type="email" id="email" name="email" required><br><br>
+                            <label class="contact_us_title" for="message">Message:</label><br><br>
+                            <textarea class="text_input" id="message" name="message" required></textarea><br><br>
+                            <button id="send_email_btn" type="submit">Send</button>
+                        </form>
                     </div>
     
                 </div>

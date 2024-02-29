@@ -37,11 +37,15 @@
                             <a href="/payment/">Payment</a>
                         </div>
                     </div>
+
+                    <div id="notification_div">
+                        <p id="message"></p>
+                    </div>
     
                     <div id="about_us_div">
                         <h1>Sunflower Sanitation</h1>
                         <p class="about_p">At Sunflower Sanitation, we take pride in serving the rural residential areas with top-notch trash collection services. With a commitment to cleanliness and environmental responsibility, we've been the trusted choice for local residents.</p>
-                        <p class="about_p">Our dedicated team understands the unique needs of rural communities, and we're here to make sure your waste is handled efficiently and responsibly. Whether it's curbside pickup or special disposal requirements, we're equipped to handle it all.</p>
+                        <p class="about_p">Our dedicated team understands the unique needs of rural communities, and we're here to make sure your waste is handled efficiently and responsibly. Whether it's residential trash pickup or special disposal requirements, we're equipped to handle it all.</p>
                         <img id="truck_1" src="/res/truck_1.jpeg">
                         <p class="about_p_small">We believe that a clean community is a happy community, and that's why we go the extra mile to ensure your waste is managed in an eco-friendly manner. We're more than just a trash collection company; we're your partners in keeping your neighborhood clean and beautiful. <br><br>Join us in our mission to make rural living even better. Contact us today to experience our reliable, friendly, and environmentally-conscious trash collection services.</p>
                     </div>
@@ -53,7 +57,7 @@
                             <label class="contact_us_title" for="email">Email:</label><br><br>
                             <input class="text_input" type="email" id="email" name="email" required><br><br>
                             <label class="contact_us_title" for="message">Message:</label><br><br>
-                            <textarea class="text_input" id="message" name="message" required></textarea><br><br>
+                            <textarea class="text_input text_input_body" id="message" name="message" required></textarea><br><br>
                             <button id="send_email_btn" type="submit">Send</button>
                         </form>
                     </div>
@@ -73,6 +77,50 @@
         </div>
 
         <script src="/scripts/mobile_nav_script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const response = urlParams.get('response');
 
+            if (response) {
+                let message = '';
+                let error = true;
+                switch (response) {
+                    case '200':
+                        message = 'Thank you! Your message has been sent.';
+                        error = false;
+                        break;
+                    case '400':
+                        message = 'There was a problem with your submission. Please check your input and try again.';
+                        break;
+                    case '500':
+                        message = 'Oops! Something went wrong on our end. Please try again later.';
+                        break;
+                    case '403':
+                        message = 'Access denied. You do not have permission to access this page.';
+                        break;
+                    default:
+                        message = 'An unexpected error occurred.';
+                    }
+                    setMessage(message, error)
+                }
+            });
+
+            function setMessage(messageToShow, error){
+                let messageDiv = document.getElementById("notification_div");
+                messageDiv.style.display = 'block';
+
+                let message = document.getElementById("message");
+                message.innerHTML = messageToShow;
+
+                if(error){
+                    messageDiv.style.backgroundColor = '#FFCDD2';
+                    message.style.color = '#B71C1C';
+                }else{
+                    messageDiv.style.backgroundColor = '#A5D6A7';
+                    message.style.color = '#1B5E20';
+                }
+            }
+        </script>
     </body>
 </html>

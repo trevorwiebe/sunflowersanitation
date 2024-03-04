@@ -152,6 +152,85 @@ body {
     margin-bottom: 100px;
 }
 
+.rolloff_para{
+    text-align: justify;
+}
+
+#rolloff_title{
+    margin-top: 50px;
+}
+
+#rolloff_box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.roff_box1{
+    width: 57%;
+}
+
+#roff_box2{
+    width: 3%;
+}
+
+#truck_image{
+    width: 40%;
+}
+
+#removal_guidelines{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#removal_box1{
+    border: var(--green) 4px solid;
+    margin-bottom: 10px;
+}
+
+#removal_box2{
+    border: darkred 4px solid;
+    margin-bottom: 10px;
+}
+
+.removal_box{
+    width: 46%;
+}
+
+#removal_spacer{
+    width: 4%;
+}
+
+.removal_box_title{
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline;
+    float: right;
+}
+
+#removal_yes{
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+    font-weight: bold;
+    background-color: var(--green);
+    color: white;
+}
+
+#removal_no{
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+    font-weight: bold;
+    background-color: darkred;
+    color: white;
+}
+
 @media only screen and (min-width: 1900px){
     .payment_box{
         width: 300px;
@@ -203,4 +282,19 @@ body {
     .dropdown{
         display: inline-block;
     }
+    .removal_box{
+        width: 99%;
+    }
+    .roff_box1{
+        width: 99%;
+    }
+    
+    #roff_box2{
+        width: 0%;
+    }
+    
+    #truck_image{
+        width: 99%;
+    }
+    
 }

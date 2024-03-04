@@ -9,4 +9,5 @@ Payment Page
 	ACH form
 
 Phone number 6205049510
-Wait to hear on email.
+
+Make contact us a clearer call to action

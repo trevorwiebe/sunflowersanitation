@@ -21,13 +21,20 @@ body {
     min-height: 100vh;
 }
 
+#nav_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: var(--background);
     overflow: hidden;
     margin-bottom: 50px;
-    margin-top: 55px;
-    float: right;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Style the links inside the navigation bar */

@@ -174,7 +174,7 @@ body {
 }
 
 .roff_box1{
-    width: 57%;
+    width: 45%;
 }
 
 #roff_box2{
@@ -182,7 +182,9 @@ body {
 }
 
 #truck_image{
-    width: 40%;
+    width: 45%;
+    height: 45%;
+    padding-left: 5%;
 }
 
 #removal_guidelines{
